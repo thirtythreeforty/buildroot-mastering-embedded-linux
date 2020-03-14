@@ -7,7 +7,7 @@ case "$1" in
                 [ $? = 0 ] && echo "OK" || echo "FAIL"
                 ;;
         stop)
-                printf "Stopping dnsmasq: "
+                printf "Stopping hostapd: "
                 start-stop-daemon -K -q -x /usr/sbin/hostapd
                 [ $? = 0 ] && echo "OK" || echo "FAIL"
                 ;;
